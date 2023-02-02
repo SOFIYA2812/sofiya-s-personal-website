@@ -1,0 +1,165 @@
+<html>
+    <head>
+         <link rel="stylesheet" href="css/style.css">
+         <script src="https://kit.fontawesome.com/137552beb1.js" crossorigin="anonymous"></script>
+         <title>Homepage</title>
+    </head>
+    
+    <body>
+      <div class="topnav">
+        <a href="gallery.html">Gallery</a>
+        <a href="family.html">Family</a>
+        <a href="education.html">Education</a>
+        <div class="Experiences">
+          <button class="dropbtn">Experiences
+            <i class="fa-solid fa-caret-down"></i>
+          </button>
+          <div class="Experiences-content">
+            <a href="primemover.html">Prime Mover Club</a>
+            <a href="others.html">Others</a></div>
+          </div>
+      <a href="biodata.html">Biodata</a>
+      <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i>Homepage</a>
+        
+        <a href="index.html" class="split" style="color: white; text-shadow: 1.5px 1.5px #c04b4b; font-size: 18px; font-style: italic; font-family:sans-serif;"><i class="fa-solid fa-seedling"></i> Sofiya's Personal Website</a>
+      </div>
+
+
+      <div class="header2">
+        <h1>Hi! I'm </h1>
+        <h2 style="margin-top: -40px;">Nur Sofiya</h2> 
+        <h3 style="color: #c04b4b; text-shadow: 0.5px 0.5px white;">Welcome to My Personal Website</h3>
+      </div>
+
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="img\Quote.png" style="height: 10cm; width:100%; margin-top: 20px; margin-right: 0%; border-style: double; border-color: rgb(44, 43, 48); border-width: 10px;">
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="img/Wake up (1).png" style="height: 10cm; width:100%; margin-top: 20px; margin-right: 0%; border-style: double; border-color: rgb(44, 43, 48); border-width: 10px;">
+         
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="img/Wake up.png" style="height: 10cm; width:100%; margin-top: 20px; margin-right: 0%; border-style: double; border-color: rgb(44, 43, 48); border-width: 10px;">
+          
+        </div>
+      
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                  <a class="next" onclick="plusSlides(1)">❯</a>
+                  
+                  </div>
+                  <br>
+                  
+                  <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                  </div>
+                  
+                  <script>
+                    let slideIndex = 1;
+                    showSlides(slideIndex);
+                    
+                    function plusSlides(n) {
+                      showSlides(slideIndex += n);
+                    }
+                    
+                    function currentSlide(n) {
+                      showSlides(slideIndex = n);
+                    }
+                    
+                    function showSlides(n) {
+                      let i;
+                      let slides = document.getElementsByClassName("mySlides");
+                      let dots = document.getElementsByClassName("dot");
+                      if (n > slides.length) {slideIndex = 1}    
+                      if (n < 1) {slideIndex = slides.length}
+                      for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                      }
+                      for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                    }
+                    </script>
+                    
+
+
+
+      <div class="main" style=" width: 60%; height: 50cm; background-color: rgb(44, 43, 48); background-image: url(img/bunga.png); background-size: 100% 100%; margin-top: 30px;">
+        <p style="color: white; text-shadow: 2px 2px #c04b4b; font-size: 60px; text-align: center;"> Click Me!</p>
+        <div class="container2">
+          <img src="img/biodata.jpg" class="image3" style="margin-top: 10px; width: 120%; height: 15%; margin-right: 40%; margin-left: 40%;">
+          <div class="middle">
+            <div class="text4"><a href="biodata.html">BIODATA</a></div>
+          </div>
+        </div>
+
+        <div class="container2">
+          <img src="img/experiences.jpg" class="image3" style="margin-top: 50px; width: 120%; height: 15%; margin-right: 40%; margin-left: 40%;">
+          <div class="middle">
+            <div class="text4"><a href="experiences.html">EXPERIENCES</a></div>
+          </div>
+        </div>
+
+        <div class="container2">
+          <img src="img/education.jpg" class="image3" style="margin-top: 50px; width: 120%; height: 15%; margin-right: 40%; margin-left: 40%;">
+          <div class="middle">
+            <div class="text4"><a href="education.html">EDUCATION</a></div>
+          </div>
+        </div>
+
+        <div class="container2">
+          <img src="img/family.jpg" class="image3" style="margin-top:50px; width: 120%; height: 15%; margin-right: 40%; margin-left: 40%;">
+          <div class="middle">
+            <div class="text4"><a href="family.html">FAMILY</a></div>
+          </div>
+        </div>
+
+        <div class="container2">
+          <img src="img/My Gallery.png" class="image3" style="margin-top: 25px; width: 140%; height: 20%; margin-right: 20%; margin-left: 30%;">
+          <div class="middle">
+            <div class="text4"><a href="gallery.html">GALLERY</a></div>
+          </div>
+        </div>
+
+      </div>
+
+    
+
+
+       
+    </div>
+
+        <div class="side" style="background-color: rgb(44, 43, 48); background-image: url(img/bunga.png); margin-top: 30px; margin-right: 30px;">
+          <p style="color: #c04b4b; text-shadow: 0.2px 0.2px white; font-size: 30px; text-align: center;"> About Me</p>
+          <img src="img/Myself.png" style="margin-top: -15px; width: 50%; height: 10%; margin-right: 25%; margin-left: 25%;">
+          <p style="color: white; font-size:smaller; text-align: center; margin-top: 20px; margin-left: 10%; margin-right: 10%;">Hi! 
+            I'm Sofiya, a student Diploma from UiTM Machang and currently in the last semester. This personal website is for my IMD311 assignment and I hope you enjoy this website! Thank you.</p>
+          <p style="color: white; font-size:15px; text-align: center; margin-top: 20px; margin-left: 10%; margin-right: 10%; margin-bottom: 20px;"> Before that, why not listen to instrumental music first?🤩
+            <audio controls>
+              <source src="audio\lullaby-13005.mp3" type="audio/mpeg">
+
+            </audio>
+
+        </div>
+
+    <footer style="background-color: #c04b4b; height: 30%; padding: 20px;text-align: center; margin-top: 126.3%;">
+      <p style="color: aliceblue;">Credit: Nur Sofiya<br>
+        <p style="color: white; text-shadow: 0.5px 0.5px black; font-size: 20px;">Copyright©2023 Nur Sofiya. All Right Reserved<br>
+          <p style="color: aliceblue;">Any Inquiries:<br>
+      <a href="mailto:nrsofiya2812@gmail.com">nrsofiya2812@gmail.com</a></p>
+    </footer>
+
+    
+
+    </body>
+    </html>
